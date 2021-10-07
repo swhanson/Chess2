@@ -16,7 +16,7 @@
     {"id":{"name":"TGMS_System","path":"scripts/TGMS_System/TGMS_System.yy",},"order":2,},
     {"id":{"name":"obj_kingmarker","path":"objects/obj_kingmarker/obj_kingmarker.yy",},"order":2,},
     {"id":{"name":"rm_skins","path":"rooms/rm_skins/rm_skins.yy",},"order":2,},
-    {"id":{"name":"spr_explode_PLS_REPLACE","path":"sprites/spr_explode_PLS_REPLACE/spr_explode_PLS_REPLACE.yy",},"order":29,},
+    {"id":{"name":"spr_explode","path":"sprites/spr_explode/spr_explode.yy",},"order":29,},
     {"id":{"name":"obj_tutorplayer","path":"objects/obj_tutorplayer/obj_tutorplayer.yy",},"order":0,},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":4,},
     {"id":{"name":"TGMS_6_TweenTools","path":"scripts/TGMS_6_TweenTools/TGMS_6_TweenTools.yy",},"order":9,},

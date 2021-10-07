@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_explode_PLS_REPLACE",
-    "path": "sprites/spr_explode_PLS_REPLACE/spr_explode_PLS_REPLACE.yy",
+    "name": "spr_explode",
+    "path": "sprites/spr_explode/spr_explode.yy",
   },
   "solid": false,
   "visible": true,
