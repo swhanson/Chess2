@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"rm_tutorknight","path":"rooms/rm_tutorknight/rm_tutorknight.yy",},"order":2,},
+    {"id":{"name":"obj_gameover","path":"objects/obj_gameover/obj_gameover.yy",},"order":24,},
     {"id":{"name":"spr_studio_logo","path":"sprites/spr_studio_logo/spr_studio_logo.yy",},"order":28,},
     {"id":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},"order":6,},
     {"id":{"name":"spr_friendlyking","path":"sprites/spr_friendlyking/spr_friendlyking.yy",},"order":4,},
@@ -60,6 +61,7 @@
     {"id":{"name":"TGMS_3_EventCallbacks","path":"scripts/TGMS_3_EventCallbacks/TGMS_3_EventCallbacks.yy",},"order":6,},
     {"id":{"name":"spr_return","path":"sprites/spr_return/spr_return.yy",},"order":1,},
     {"id":{"name":"obj_skinkillerqueen","path":"objects/obj_skinkillerqueen/obj_skinkillerqueen.yy",},"order":8,},
+    {"id":{"name":"spr_gameover","path":"sprites/spr_gameover/spr_gameover.yy",},"order":31,},
     {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},"order":1,},
     {"id":{"name":"obj_return","path":"objects/obj_return/obj_return.yy",},"order":0,},
     {"id":{"name":"snd_boom","path":"sounds/snd_boom/snd_boom.yy",},"order":1,},
@@ -105,6 +107,7 @@
     {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},"order":14,},
     {"id":{"name":"spr_knight","path":"sprites/spr_knight/spr_knight.yy",},"order":5,},
     {"id":{"name":"TGMS_4_TweenState","path":"scripts/TGMS_4_TweenState/TGMS_4_TweenState.yy",},"order":7,},
+    {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},"order":7,},
     {"id":{"name":"rm_tutorrook","path":"rooms/rm_tutorrook/rm_tutorrook.yy",},"order":3,},
     {"id":{"name":"obj_bg","path":"objects/obj_bg/obj_bg.yy",},"order":0,},
     {"id":{"name":"TGMS_5_TweenGetSet","path":"scripts/TGMS_5_TweenGetSet/TGMS_5_TweenGetSet.yy",},"order":8,},
@@ -139,6 +142,7 @@
     {"roomId":{"name":"rm_tutorbishop","path":"rooms/rm_tutorbishop/rm_tutorbishop.yy",},},
     {"roomId":{"name":"rm_tutorqueen","path":"rooms/rm_tutorqueen/rm_tutorqueen.yy",},},
     {"roomId":{"name":"rm_tutorking","path":"rooms/rm_tutorking/rm_tutorking.yy",},},
+    {"roomId":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

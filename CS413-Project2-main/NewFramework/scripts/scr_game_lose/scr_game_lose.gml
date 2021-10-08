@@ -2,5 +2,5 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_game_lose()
 {
-	room_goto(rm_title);
+	room_goto(rm_gameover);
 }
