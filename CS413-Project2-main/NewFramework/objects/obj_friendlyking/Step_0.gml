@@ -1,6 +1,8 @@
 /// @description Follow Queen
 // You can write your code in this editor
 
+
+
 follow_target = noone;
 if(room == rm_tutorplayer) 
 {
@@ -18,7 +20,6 @@ else
 	follow_distance_x = random_range(10, 100);
 	follow_distance_y = random_range(10, 100);
 	}
-
 	if (distance_to_object(obj_playerqueen)>50)
 	{
 		move_towards_point(follow_target.x-follow_distance_x,follow_target.y-follow_distance_y,1);
