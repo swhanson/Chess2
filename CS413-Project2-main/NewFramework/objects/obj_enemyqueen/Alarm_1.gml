@@ -10,7 +10,7 @@ var bottomBuffer = 10;
 var sideBuffer = 17;
 
 var md = 128 // move distance var name is short to avoid cluttering beloew functions
-var mt = 180 // move time
+var mt = 30 // move time
 
 if(distance_to_object(obj_friendlyking) > 200)
 {
