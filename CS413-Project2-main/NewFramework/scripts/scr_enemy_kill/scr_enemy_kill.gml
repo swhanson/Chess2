@@ -2,7 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_enemy_kill(toBeKilled)
 {
-instance_create_layer(toBeKilled.x,toBeKilled.y,"lyr_pieces",obj_explode);
+audio_play_sound(snd_explosion,10,false);
+layer_sequence_create("lyr_pieces",toBeKilled.x,toBeKilled.y,seq_explosion);
+
 switch(toBeKilled.object_index){
 	case obj_bishop:
 		pointObj = obj_pts300;
