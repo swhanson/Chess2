@@ -1,15 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Buffer size = difference of 64 from last pixel of collision mask + 1
-var topBuffer = 0;
-var bottomBuffer = 0;
-var sideBuffer = 0;
-
 md=128;
-targetDistance = 128;
 
-moveDecider = 0;
+// Buffer size = difference of 64 from last pixel of collision mask + 1
+var topBuffer = md;
+var bottomBuffer = md;
+var sideBuffer = md;
+
+
+
+
+moveDecider = irandom(4);
 
 // Graveyard
 /* 
@@ -41,12 +43,10 @@ y-inst_friendlyking.y < 0)
 
 switch(moveDecider){
 	case 0:
-		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
-			speed = 0; // do nothing
-		}
+		speed = 0; // do nothing
 		break;
 	case 1:
-		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
+		if(tilemap_get_at_pixel(tileMap, bbox_left+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
 			TweenEasyMove(x,y,x-md,y,0,60,EaseInOutSine);;
 		}
 		break;
@@ -56,7 +56,7 @@ switch(moveDecider){
 		}
 		break;
 	case 3:
-		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
+		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_top+topBuffer) == 0) {
 			TweenEasyMove(x,y,x,y-md,0,60,EaseInOutSine);
 		}
 		break;
@@ -66,3 +66,4 @@ switch(moveDecider){
 		}
 		break;
 }
+alarm[1] = room_speed;
