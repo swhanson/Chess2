@@ -58,6 +58,7 @@
     {"id":{"name":"rm_tutorplayer","path":"rooms/rm_tutorplayer/rm_tutorplayer.yy",},"order":0,},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},"order":8,},
     {"id":{"name":"obj_enemyqueen","path":"objects/obj_enemyqueen/obj_enemyqueen.yy",},"order":3,},
+    {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},"order":6,},
     {"id":{"name":"obj_credscreen","path":"objects/obj_credscreen/obj_credscreen.yy",},"order":17,},
     {"id":{"name":"spr_cowboyskin","path":"sprites/spr_cowboyskin/spr_cowboyskin.yy",},"order":1,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":2,},
