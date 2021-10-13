@@ -9,9 +9,9 @@ var sideBuffer = 17;
 
 notAtEdge = 
 tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_top-topBuffer) == 0 && 
-tilemap_get_at_pixel(tileMap, bbox_right-sideBuffer, bbox_top-topBuffer) == 0 &&
-tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom-bottomBuffer) == 0 &&
-tilemap_get_at_pixel(tileMap, bbox_right-sideBuffer, bbox_bottom-bottomBuffer) == 0;
+tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_top-topBuffer) == 0 &&
+tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom+bottomBuffer) == 0 &&
+tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0;
 
 if (distance_to_object(obj_playerqueen) < 128 && notAtEdge)
 {
@@ -19,5 +19,5 @@ if (distance_to_object(obj_playerqueen) < 128 && notAtEdge)
     speed = 1
 
 } else {
-    speed = 0.05 //This is assuming you want the enemy to stop when the player isn't near
+    speed = 0.01 // he can crawl but he can't get away.
 }

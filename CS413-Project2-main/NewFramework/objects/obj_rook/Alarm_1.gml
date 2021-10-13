@@ -10,19 +10,19 @@ md=64;
 
 moveDecider = 0;
 multiplier = 1;
-if (distance_to_object(obj_friendlyking) < 500 && y-inst_friendlyking.y < 64)
+if ( abs(x-inst_friendlyking.x) < 128 && y-inst_friendlyking.y < 64)
 {
 	moveDecider = 1; // side to side move.
-	multiplier = floor(inst_friendlyking.x/64);
+	multiplier = floor(inst_friendlyking.x/md);
 	if(x-inst_friendlyking.x > 0)
 	{
 		multiplier *= -1;
 	}
 }
-else if (y-inst_friendlyking.y  && x-inst_friendlyking.x < 64)
+else if (abs(y-inst_friendlyking.y) < 128  && x-inst_friendlyking.x < 64)
 {
 	moveDecider = 2; // up down move.
-	multiplier = floor(inst_friendlyking.y/64);
+	multiplier = floor(inst_friendlyking.y/md);
 	if(y-inst_friendlyking.y > 0)
 	{
 		multiplier *= -1;
