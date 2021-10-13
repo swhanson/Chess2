@@ -9,15 +9,19 @@ var sideBuffer = 17;
 
 notAtEdge = 
 tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_top-topBuffer) == 0 && 
-tilemap_get_at_pixel(tileMap, bbox_right-sideBuffer, bbox_top-topBuffer) == 0 &&
-tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom-bottomBuffer) == 0 &&
-tilemap_get_at_pixel(tileMap, bbox_right-sideBuffer, bbox_bottom-bottomBuffer) == 0;
+tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_top-topBuffer) == 0 &&
+tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom+bottomBuffer) == 0 &&
+tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0;
 
-if (distance_to_object(obj_playerqueen) < 128 && notAtEdge)
+if(!notAtEdge)
+{
+	move_towards_point(inst_playerqueen.x,inst_friendlyking.y,1);
+	return;
+}
+
+if (distance_to_object(obj_playerqueen) < 128)
 {
     direction = point_direction(x,y,inst_playerqueen.x,inst_playerqueen.y)-180
     speed = 1
 
-} else {
-    speed = 0.05 //This is assuming you want the enemy to stop when the player isn't near
 }

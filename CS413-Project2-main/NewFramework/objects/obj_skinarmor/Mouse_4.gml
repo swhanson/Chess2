@@ -6,3 +6,4 @@ with(inst_skinmodel){
 with(inst_menumodel){
 	sprite_index = spr_armorskin;
 }	
+audio_play_sound(snd_whack,1,0);

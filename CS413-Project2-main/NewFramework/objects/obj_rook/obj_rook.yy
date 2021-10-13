@@ -3,7 +3,7 @@
     "name": "spr_rook",
     "path": "sprites/spr_rook/spr_rook.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
