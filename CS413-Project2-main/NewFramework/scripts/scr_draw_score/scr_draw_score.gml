@@ -3,5 +3,5 @@
 function scr_draw_score()
 {
 	draw_set_font(font_gameplay);
-	draw_text(500,500,score);
+	draw_text(inst_playerqueen.x,inst_playerqueen.y,"Hello World");
 }

@@ -83,6 +83,7 @@
     {"id":{"name":"spr_tutorplayer","path":"sprites/spr_tutorplayer/spr_tutorplayer.yy",},"order":0,},
     {"id":{"name":"obj_skinoriginal","path":"objects/obj_skinoriginal/obj_skinoriginal.yy",},"order":7,},
     {"id":{"name":"snd_kingsfuneral","path":"sounds/snd_kingsfuneral/snd_kingsfuneral.yy",},"order":3,},
+    {"id":{"name":"font_gameplay","path":"fonts/font_gameplay/font_gameplay.yy",},"order":0,},
     {"id":{"name":"TGMS_7_Properties","path":"scripts/TGMS_7_Properties/TGMS_7_Properties.yy",},"order":10,},
     {"id":{"name":"spr_win","path":"sprites/spr_win/spr_win.yy",},"order":5,},
     {"id":{"name":"spr_tutorking","path":"sprites/spr_tutorking/spr_tutorking.yy",},"order":6,},
