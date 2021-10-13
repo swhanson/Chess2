@@ -5,11 +5,13 @@ var bottomBuffer = 10+128;
 var sideBuffer = 17+128;
 randomize();
 moveDecider = irandom(7);
+
 switch(moveDecider) {
 	case 0:
 		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_top-topBuffer) == 0) {
 			TweenEasyMove(x,y,x-128,y-64,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -17,6 +19,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_top-topBuffer) == 0) {
 			TweenEasyMove(x,y,x-64,y-128,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -24,6 +27,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_top-topBuffer) == 0) {
 			TweenEasyMove(x,y,x+64,y-128,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -31,6 +35,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_top-topBuffer) == 0) {
 			TweenEasyMove(x,y,x+128,y-64,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -38,6 +43,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom+bottomBuffer) == 0) {
 			TweenEasyMove(x,y,x-128,y+64,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -45,6 +51,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom+bottomBuffer) == 0) {
 			TweenEasyMove(x,y,x-64,y+128,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -52,6 +59,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
 			TweenEasyMove(x,y,x+128,y+64,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
@@ -59,6 +67,7 @@ switch(moveDecider) {
 		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
 			TweenEasyMove(x,y,x+64,y+128,0,room_speed,EaseInOutSine);
 			image_alpha = 0.6;
+			solid = false;
 			isVulnerable = false;
 		}
 		break;
