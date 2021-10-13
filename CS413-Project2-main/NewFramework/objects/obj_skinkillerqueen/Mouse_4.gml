@@ -6,4 +6,4 @@ with(inst_skinmodel){
 with(inst_menumodel){
 	sprite_index = spr_killerqueenskin;
 }	
-audio_play_sound(snd_explosion,1,0);
+audio_play_sound(snd_whack,1,0);
