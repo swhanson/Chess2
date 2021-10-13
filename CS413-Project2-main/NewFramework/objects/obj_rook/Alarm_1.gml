@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-md=128;
+md=256;
 
 // Buffer size = difference of 64 from last pixel of collision mask + 1
 var topBuffer = md;
@@ -46,7 +46,7 @@ switch(moveDecider){
 		speed = 0; // do nothing
 		break;
 	case 1:
-		if(tilemap_get_at_pixel(tileMap, bbox_left+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
+		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom+bottomBuffer) == 0) {
 			TweenEasyMove(x,y,x-md,y,0,60,EaseInOutSine);;
 		}
 		break;

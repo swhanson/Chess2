@@ -23,7 +23,7 @@ else
 
 if(!notAtEdge)
 {
-	move_towards_point(follow_target.x-irandom(10),follow_target.y-irandom(10),1);
+	move_towards_point(follow_target.x-irandom(20),follow_target.y-irandom(20),1);
 }
 
 	follow_distance_x = random_range(10, 100);
