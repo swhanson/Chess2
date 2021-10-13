@@ -26,6 +26,5 @@ switch(toBeKilled.object_index){
 		break;
 }
 instance_create_layer(toBeKilled.x-16,toBeKilled.y-32,"lyr_gui",toBeKilled.pointObj);
-draw_text(inst_playerqueen.x,inst_playerqueen.y,"Hello World");
 instance_destroy(toBeKilled);
 }

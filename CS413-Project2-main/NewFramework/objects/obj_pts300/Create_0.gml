@@ -2,4 +2,4 @@
 // You can write your code in this editor
 alarm[10] = room_speed;
 
-score += 300;
+global.score += 300;
