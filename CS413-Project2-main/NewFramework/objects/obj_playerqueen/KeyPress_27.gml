@@ -7,3 +7,4 @@ with(inst_menumodel){
 	x=203;
 	y=71;
 }
+audio_stop_sound(snd_background_music);
