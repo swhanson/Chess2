@@ -20,9 +20,10 @@ else
 {
 	follow_target = inst_playerqueen;
 }
+
 if(!notAtEdge)
 {
-	move_towards_point(follow_target.x,follow_target.y,1);
+	move_towards_point(follow_target.x-irandom(10),follow_target.y-irandom(10),1);
 }
 
 	follow_distance_x = random_range(10, 100);
