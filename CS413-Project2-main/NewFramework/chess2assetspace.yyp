@@ -6,6 +6,7 @@
     {"id":{"name":"rm_logo","path":"rooms/rm_logo/rm_logo.yy",},"order":6,},
     {"id":{"name":"spr_friendlyking","path":"sprites/spr_friendlyking/spr_friendlyking.yy",},"order":4,},
     {"id":{"name":"TGMS_1_EasyTweens","path":"scripts/TGMS_1_EasyTweens/TGMS_1_EasyTweens.yy",},"order":4,},
+    {"id":{"name":"scr_draw_score","path":"scripts/scr_draw_score/scr_draw_score.yy",},"order":2,},
     {"id":{"name":"Object2","path":"objects/Object2/Object2.yy",},"order":1,},
     {"id":{"name":"seq_pawnmove","path":"sequences/seq_pawnmove/seq_pawnmove.yy",},"order":0,},
     {"id":{"name":"obj_tutorqueen","path":"objects/obj_tutorqueen/obj_tutorqueen.yy",},"order":5,},
