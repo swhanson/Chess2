@@ -10,10 +10,6 @@ tilemap_get_at_pixel(tileMap, bbox_right-sideBuffer, bbox_top-topBuffer) == 0 &&
 tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom-bottomBuffer) == 0 &&
 tilemap_get_at_pixel(tileMap, bbox_right-sideBuffer, bbox_bottom-bottomBuffer) == 0;
 
-if(!notAtEdge)
-{
-	move_towards_point(inst_playerqueen.x,inst_playerqueen.y,1);
-}
 
 follow_target = noone;
 if(room == rm_tutorplayer) 
@@ -24,6 +20,11 @@ else
 {
 	follow_target = inst_playerqueen;
 }
+if(!notAtEdge)
+{
+	move_towards_point(follow_target.x,follow_target.y,1);
+}
+
 	follow_distance_x = random_range(10, 100);
 	follow_distance_y = random_range(10, 100);
 
