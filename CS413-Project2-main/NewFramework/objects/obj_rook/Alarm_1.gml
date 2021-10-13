@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-md=256;
+md=128;
 
 // Buffer size = difference of 64 from last pixel of collision mask + 1
-var topBuffer = md;
-var bottomBuffer = md;
-var sideBuffer = md;
+var topBuffer = 15+md;
+var bottomBuffer = 10+md;
+var sideBuffer = 17+md;
 
 
 
@@ -46,23 +46,23 @@ switch(moveDecider){
 		speed = 0; // do nothing
 		break;
 	case 1:
-		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_bottom+bottomBuffer) == 0) {
-			TweenEasyMove(x,y,x-md,y,0,60,EaseInOutSine);;
+		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_left-sideBuffer) == 0) {
+			TweenEasyMove(x,y,x-md,y,0,60,EaseInOutSine); //left
 		}
 		break;
 	case 2:
-		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
-			TweenEasyMove(x,y,x+md,y,0,60,EaseInOutSine);
+		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_right+sideBuffer) == 0) {
+			TweenEasyMove(x,y,x+md,y,0,60,EaseInOutSine); //right
 		}
 		break;
 	case 3:
-		if(tilemap_get_at_pixel(tileMap, bbox_left-sideBuffer, bbox_top+topBuffer) == 0) {
-			TweenEasyMove(x,y,x,y-md,0,60,EaseInOutSine);
+		if(tilemap_get_at_pixel(tileMap, bbox_top-topBuffer,  bbox_top-topBuffer) == 0) {
+			TweenEasyMove(x,y,x,y-md,0,60,EaseInOutSine); //up 
 		}
 		break;
 	case 4:
-		if(tilemap_get_at_pixel(tileMap, bbox_right+sideBuffer, bbox_bottom+bottomBuffer) == 0) {
-			TweenEasyMove(x,y,x,y+md,0,60,EaseInOutSine);
+		if(tilemap_get_at_pixel(tileMap, bbox_bottom+bottomBuffer, bbox_bottom+bottomBuffer) == 0) {
+			TweenEasyMove(x,y,x,y+md,0,60,EaseInOutSine); //down
 		}
 		break;
 }
