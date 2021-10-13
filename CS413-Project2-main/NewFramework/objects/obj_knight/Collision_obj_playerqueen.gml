@@ -1,3 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-scr_enemy_kill(id);
+
+if(isVulnerable) {
+	scr_enemy_kill(id);
+}
